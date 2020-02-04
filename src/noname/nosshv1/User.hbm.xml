@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+        "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+	<class name="noname.nosshv1.pojo.User" table="nouser">
+		<id name="id" type="int">
+			<column name="id"/>
+			<generator class="identity">
+			</generator>
+		</id>
+		<property name="name" column="name" type="java.lang.String" />
+		<property name="password" column="password" type="java.lang.String" />
+		<property name="role" column="role" type="java.lang.String" />
+	</class>
+	<class name="noname.nosshv1.pojo.Account" table="noaccount">
+		<id name="id" type="int">
+			<column name="id"/>
+			<generator class="identity">
+			</generator>
+		</id>
+		<property name="account" column="account" type="java.lang.String" />
+		<property name="username" column="username" type="java.lang.String" />
+		<property name="password" column="password" type="java.lang.String" />
+		<property name="comment" column="comment" type="java.lang.String" />
+	</class>
+</hibernate-mapping>
